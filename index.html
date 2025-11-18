@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Consulta tu mesa</title>
+
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
@@ -12,19 +13,21 @@
       background: url('img/fondo.jpg') no-repeat center center fixed;
       background-size: cover;
       margin: 0;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       color: white;
       text-align: center;
       backdrop-filter: brightness(0.8);
+      padding-bottom: 0; /* limpio para PC */
     }
 
     h1 {
       font-size: 2.6em;
       font-weight: 400;
+      margin-top: 70px;
       margin-bottom: 40px;
       letter-spacing: 0.5px;
     }
@@ -68,8 +71,9 @@
     }
 
     #resultado {
-      margin-top: 35px; /* reducido el espacio */
+      margin-top: 35px;
       line-height: 1.4;
+      padding: 0 20px;
     }
 
     #resultado .nombre {
@@ -81,7 +85,7 @@
     #resultado .mesa {
       font-size: 2em;
       font-weight: 400;
-      margin-bottom: 15px; /* espacio menor */
+      margin-bottom: 15px;
     }
 
     #resultado .companeros {
@@ -93,54 +97,72 @@
       line-height: 1.8;
     }
 
-    /* === Branding minimalista === */
-.branding {
-  position: fixed;
-  padding-bottom: 8px; /* espacio para los logos */
-  bottom: 20px;
-  right: 25px;
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  opacity: 0.8;
-}
 
-.branding img {
-  height: 90px;
-  width: auto;
-  filter: brightness(0) invert(1); /* hace las imágenes blancas sobre fondo oscuro */
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
+    /* ================================
+       LOGOS – PC (FIJOS)
+       ================================ */
+    .branding {
+      position: fixed;
+      bottom: 20px;
+      right: 25px;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      opacity: 0.8;
+    }
 
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 768px) {
-  .branding {
-    bottom: 10px;
-    right: 10px;
-    gap: 8px;
-  }
-
-  .branding img {
-    height: 50px; /* Reduce tamaño en móviles */
-  }
-}
+    .branding img {
+      height: 90px;
+      width: auto;
+      filter: brightness(0) invert(1);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
 
 
+    /* ================================
+       VERSIÓN MÓVIL
+       ================================ */
+    @media (max-width: 768px) {
+
+      /* Logos dejan de ser fijos y bajan debajo del contenido */
+      .branding {
+        position: static;
+        margin-top: 40px;
+        justify-content: center;
+      }
+
+      .branding img {
+        height: 60px;
+      }
+
+      body {
+        padding-bottom: 40px; /* pequeño espacio, no molesta */
+      }
+
+      h1 {
+        margin-top: 40px;
+        font-size: 2em;
+      }
+    }
   </style>
 </head>
+
 <body>
+
   <h1>Consulta tu número de mesa</h1>
+
   <input type="text" id="dni" placeholder="Ingresá tu DNI">
   <button onclick="buscarMesa()">Buscar</button>
+
   <div id="resultado"></div>
 
-  <!-- Branding en esquina inferior derecha -->
+  <!-- Branding -->
   <div class="branding">
     <img src="img/Logos-MERCO.png" alt="Logo MERCO">
     <img src="img/Logos-VMC.png" alt="Logo VMC">
   </div>
 
   <script src="script.js"></script>
-</body>
 
+</body>
 </html>
