@@ -32,9 +32,9 @@ DNI,nombre,mesa
 14506632,Liliana Manera,4
 37797810,Martín Modenesi,4
 32251731,Mariana Modenesi,4
-,René Vier,4
-,Romeo Vier (menor),4
-,Luis Manera,4
+1,René Vier,4
+2,Romeo Vier,4
+3,Luis Manera,4
 17658926,Edgardo Monutti,5
 14889917,Gustavo Fontanetto,5
 24860733,Carlos Botta,5
@@ -48,16 +48,16 @@ DNI,nombre,mesa
 33722582,Fabián Mesa,5
 36887434,Daniel Galiani,5
 34206222,Eugenia Lencioni,6
-,Matías Dunky,6
-,Juana Dunky (menor),6
-,Dante Dunky (menor),6
+4,Matías Dunky,6
+5,Juana Dunky ,6
+6,Dante Dunky ,6
 42700665,Sol Lencioni,6
-,Tomas Nagel,6
+7,Tomas Nagel,6
 32251947,Julia Lencioni,6
-,Martín Díaz,6
-,Vito Díaz (menor),6
+8,Martín Díaz,6
+9,Vito Díaz (menor),6
 31364734,Mario Henssler,6
-,Gisela Manera,6
+10,Gisela Manera,6
 44994568,Agostina Denasio ,7
 44632548,Luna Icasuriaga ,7
 46494180,Milena Pairola ,7
@@ -134,6 +134,7 @@ DNI,nombre,mesa
 40556751,Enzo Taborda ,14
 32989200,Facundo Iznardo ,14
 45029461,Lisandro Lopez,14
+40358454, Brian Suarez,14
 44654977,Bruno Ardusso ,14
 30811330,Diego Miniotti,15
 23920254,Gastón Galliano,15
@@ -188,7 +189,7 @@ DNI,nombre,mesa
 36014430,Santiago Ribero,19
 39123824,Santiago Mercante,19
 39123834,Santiago Castellano,19
-40358454,Brian Suarez,20
+13476600, Juan Pagliaroli,20
 33215408,Matías Fontanetto,20
 37452083,Iván Mansutti,20
 17703946,Néstor Pairetti ,20
@@ -208,7 +209,6 @@ DNI,nombre,mesa
 37575833,Federico Maciel  ,21
 42032584,Lautaro Toledo ,21
 35954184,Nahuel Villarroel ,21
-39855470,Lucas Perretta ,21
 41403022,María Grandolio,22
 37575866,Florencia Meyer,22
 42700431,Catalina Picotte,22
